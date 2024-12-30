@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let stu1={
+            name:"Aditya",
+        }
+        let stu2={
+            age:21,
+        }
+        let stu3={
+
+        }
+        stu2.__proto__=stu1;
+        stu3.__proto__=stu2;
+        stu3.age=22
+        console.log(stu2.age);
+        console.log(stu3.age);
+        console.log(stu3.name);
+    </script>
+</body>
+</html>

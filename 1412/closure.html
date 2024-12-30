@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function outerfunction(){
+            let counter=0;
+
+            function innerfunction(){
+                counter++;
+                return counter;
+            }
+            return innerfunction;
+        }
+        const increment=outerfunction();
+        console.log(increment());
+        console.log(increment());
+        console.log(increment());
+    </script>
+</body>
+</html>

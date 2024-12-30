@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let stu1={
+            name:"Aditya"
+        }
+        let stu2={
+            name:"Jetti"
+        }
+        function greeting(greet){
+            console.log(greet+stu1.name+stu2.name);
+        }
+        greeting.call(stu1,"Hello");
+    </script>
+</body>
+</html>
